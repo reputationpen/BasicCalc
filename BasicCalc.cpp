@@ -13,43 +13,39 @@ int selectMode()
 				return mode;
 }
 
+int getValue()
+{
+	std::cout << "Enter an integer \n";
+	int input{};
+	std::cin >> input;
+	return input;
+}
+
 void modePlus()
 {
-	std::cout << "Enter 2 integers to add: \n";
-		int pOne{};
-		int pTwo{};
-			std::cin >> pOne;
-			std::cin >> pTwo;
+		int pOne{ getValue() };
+		int pTwo{ getValue() };
 				std::cout << "Answer: " << pOne + pTwo << '\n';
 }
 
 void modeSubtract()
 {
-	std::cout << "Enter 2 integers to subtract: \n";
-		int sOne{};
-		int sTwo{};
-			std::cin >> sOne;
-			std::cin >> sTwo;
+		int sOne{ getValue() };
+		int sTwo{ getValue() };
 				std::cout << "Answer: " << sOne - sTwo << '\n';
 }
 
 void modeMulti()
 {
-	std::cout << "Enter 2 integers to multiply: \n";
-		int mOne{};
-		int mTwo{};
-			std::cin >> mOne;
-			std::cin >> mTwo;
+		int mOne{ getValue() };
+		int mTwo{ getValue() };
 				std::cout << "Answer: " << mOne * mTwo << '\n';
 }
 
 void modeDivide()
 {
-	std::cout << "Enter 2 integers to divide: \n";
-		int dOne{};
-		int dTwo{};
-			std::cin >> dOne;
-			std::cin >> dTwo;
+		int dOne{ getValue() };
+		int dTwo{ getValue() };
 				std::cout << "Answer: " << dOne / dTwo << '\n';
 }
 
